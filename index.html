@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>แหล่งอ้างอิง</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -9,10 +10,14 @@
 <style>
 
 body{
-    font-family: "Kanit", sans-serif;
-    background: linear-gradient(135deg, #66ACA5, #99C7C3);
+    font-family:"Kanit",sans-serif;
     margin:0;
     min-height:100vh;
+
+    background: linear-gradient(270deg,#66ACA5,#99C7C3,#7bbdb7);
+    background-size:400% 400%;
+
+    animation: gradientMove 10s ease infinite, fadein 1s ease;
 }
 
 .container{
@@ -36,31 +41,46 @@ p{
 
 .link{
     display:block;
-    width:70%;
-    margin:18px auto;
-    text-decoration:none;
-    padding:14px;
+    width:85%;
+    max-width:320px;
+    margin:22px auto;
+    padding:15px;
+
     border-radius:999px;
+    text-decoration:none;
     color:white;
     font-size:17px;
 
     background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
-    border:1px solid rgba(255,255,255,0.3);
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    border:1px solid rgba(255,255,255,0.35);
 
-    transition:0.25s;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+
+    transition: all 0.25s ease;
 }
 
 .link:hover{
+    transform:translateY(-3px) scale(1.05);
     background: rgba(255,255,255,0.25);
-    transform:scale(1.04);
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+@keyframes fadein{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
 }
 
 </style>
-
 </head>
 
 <body>
@@ -71,8 +91,10 @@ p{
 <p>บทความที่ใช้ประกอบงานนี้</p>
 
 <a class="link" href="https://uniwork.buxdu.uz/resurs/13326_1_6529456CBE84D2CE55A23504B7359AF1E2ED30AC.pdf" target="_blank">บทความที่ 1</a>
+
 <a class="link" href="https://www.bbc.com/news/world-asia-india-35650616" target="_blank">บทความที่ 2</a>
-<a class="link" href="https://www.bolde.com/13-everyday-phrases-that-are-shockingly-rude-in-other-cultures/?fbclid=PAT01DUAQeFbFleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeONp5D94cylSFCXa8-7pHUBviW0Ek2wXa2-h-vnm6fysSB_xI1Gjqo_N8Ogg_aem_x98yZoaEp9rCqCRHcEnt-w" target="_blank">บทความที่ 3</a>
+
+<a class="link" href="https://www.bolde.com/13-everyday-phrases-that-are-shockingly-rude-in-other-cultures/" target="_blank">บทความที่ 3</a>
 
 </div>
 
