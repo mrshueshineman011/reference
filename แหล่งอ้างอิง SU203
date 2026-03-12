@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>แหล่งอ้างอิง</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family: "Kanit", sans-serif;
+    background: linear-gradient(135deg, #66ACA5, #99C7C3);
+    margin:0;
+    min-height:100vh;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    text-align:center;
+    padding:80px 20px;
+}
+
+h1{
+    font-weight:600;
+    font-size:36px;
+    margin-bottom:10px;
+    color:white;
+}
+
+p{
+    color:#e8f5f4;
+    margin-bottom:40px;
+}
+
+.link{
+    display:block;
+    width:70%;
+    margin:18px auto;
+    text-decoration:none;
+    padding:14px;
+    border-radius:999px;
+    color:white;
+    font-size:17px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+    transition:0.25s;
+}
+
+.link:hover{
+    background: rgba(255,255,255,0.25);
+    transform:scale(1.04);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>แหล่งอ้างอิง</h1>
+<p>บทความที่ใช้ประกอบงานนี้</p>
+
+<a class="link" href="https://uniwork.buxdu.uz/resurs/13326_1_6529456CBE84D2CE55A23504B7359AF1E2ED30AC.pdf" target="_blank">บทความที่ 1</a>
+<a class="link" href="https://www.bbc.com/news/world-asia-india-35650616" target="_blank">บทความที่ 2</a>
+<a class="link" href="https://www.bolde.com/13-everyday-phrases-that-are-shockingly-rude-in-other-cultures/?fbclid=PAT01DUAQeFbFleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeONp5D94cylSFCXa8-7pHUBviW0Ek2wXa2-h-vnm6fysSB_xI1Gjqo_N8Ogg_aem_x98yZoaEp9rCqCRHcEnt-w" target="_blank">บทความที่ 3</a>
+
+</div>
+
+</body>
+</html>
